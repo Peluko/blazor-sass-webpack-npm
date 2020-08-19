@@ -1,0 +1,3 @@
+﻿This file is used to force a browser reload via 'webpack-dev-server' when the Blazor app is recompiled and launched.
+This file is touched on 'Program.cs' and webpack detects it as a content change.
+For it to work, the file must exists when 'webpack-dev-server' is started. If it doesn't exists on startup, it's ignored.

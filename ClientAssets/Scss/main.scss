@@ -1,4 +1,15 @@
-@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
+@import "variables";
+
+// Font Awesome icons
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
+
+// Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Your SCSS here...
 
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -58,7 +69,7 @@ app {
         font-size: 1.1rem;
     }
 
-    .sidebar .oi {
+    .sidebar .fas {
         width: 2rem;
         font-size: 1.1rem;
         vertical-align: text-top;

@@ -4,6 +4,8 @@
     <TargetFramework>net5.0</TargetFramework>
     <UserSecretsId>aspnet-blazor_webpack_sass_typescript-C394D6B5-84E3-455C-A4F2-B92EF2F05325</UserSecretsId>
     <RootNamespace>blazor_webpack_sass_typescript</RootNamespace>
+    <!--TypeScript is compiled using Webpack-->
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
   </PropertyGroup>
 
   <ItemGroup>

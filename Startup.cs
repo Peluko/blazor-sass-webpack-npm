@@ -57,7 +57,9 @@ namespace blazor_webpack_sass_typescript
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
+            // HTTPS redirection must be disabled in order to use the webpack reverse proxy.
+            // The reverse proxy does not work with HTTPS connections
+            // app.UseHttpsRedirection();
             app.UseStaticFiles();
 
             app.UseRouting();
