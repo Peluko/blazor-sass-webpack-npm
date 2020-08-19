@@ -1,6 +1,6 @@
 # blazor-sass-webpack-npm
 
-A Blazor skeleton project that integrates *SASS* and *TypeScript* for compiling assets and
+A Blazor skeleton project that integrates *SASS* / *SCSS* and *TypeScript* for compiling assets and
 *Webpack* for bundling and optimization. It also adds *Bootstrap* theming support and *Font Awesome* icons.
 
 ## Features
@@ -72,9 +72,12 @@ There are some *NPM* tasks preconfigured. They are:
 - ```webpack:clean```: cleans *Webpack* output.
 - ```webpack:serve```: starts the *Webpack* dev server using the *development* configuration.
 - ```dotnet:watch```: starts ```dotnet watch run```.
-- ```quickstarts```: starts ```webpack:serve``` and ```dotnet watch run``` in parallel. Prefered task for most of the development cycle. Provides live-reload of *C#*, *TypeScript*, *SCSS* and other ```wwwroot``` assets. The first browser load might fail because *Webpack* dev server is usually faster on startup up than ```dotnet watch run```. A simple browser reload solves the problem.
+- ```quickstart```: starts ```webpack:serve``` and ```dotnet watch run``` in parallel. Prefered task for most of the development cycle. Provides live-reload of *C#*, *TypeScript*, *SCSS* and other ```wwwroot``` assets. The first browser load might fail because *Webpack* dev server is usually faster on startup up than ```dotnet watch run```. A simple browser reload solves the problem.
 
 ## Implementation
 
-This project is just generated with ```dotnet new``` and then adding the required *NPM* packages and configuration files. The initial commit of this repository is just what ```dotnet new blazorserver -au Individual -f net5.0``` generates. The following commits are the additions required to make *Webpack* work.
+This project is just generated with ```dotnet new``` and then adding the required *NPM* packages and configuration files. The initial commit of this repository is just what ```dotnet new blazorserver -au Individual -f net5.0``` generates. The following commits are the additions required to make *Webpack* work. You can implement it on your own projects by applying the same changes to your project. The relevant commit is:
+
+https://github.com/Peluko/blazor-sass-webpack-npm/commit/5e2a9fc07cd7d1f366478e021de859dba83ffc6e
+
 
