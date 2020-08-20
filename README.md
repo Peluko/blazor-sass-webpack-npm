@@ -1,6 +1,6 @@
 # blazor-sass-webpack-npm
 
-A Blazor Server skeleton project that integrates *SASS* / *SCSS* and *TypeScript* for compiling assets and
+A *Blazor Server* skeleton project that integrates *SASS* / *SCSS* and *TypeScript* for compiling assets and
 *Webpack* for bundling and optimization. It also adds *Bootstrap* theming support and *Font Awesome* icons.
 
 ## Implementation
@@ -8,6 +8,20 @@ A Blazor Server skeleton project that integrates *SASS* / *SCSS* and *TypeScript
 This project is just generated with ```dotnet new``` and then adding the required *NPM* packages and configuration files. The initial commit of this repository is just what ```dotnet new blazorserver -au Individual -f net5.0``` generates. The following commits are the additions required to make *Webpack* work. You can implement it on your own projects by applying the same changes to your project. The relevant commit is:
 
 https://github.com/Peluko/blazor-sass-webpack-npm/commit/5e2a9fc07cd7d1f366478e021de859dba83ffc6e
+
+The steps for implementing it on another project are:
+
+1. Copy the file ```package.json```, and edit it for your project (i.e. project name).
+2. Copy the file ```webpack.config.js```. Edit it if you need to change the ports for the *Blazor Server* application (default are ```http://localhost:5000``` and ```https://localhost:5001```).
+3. Create the ```ClientAssets``` folder structure (just copy from this project).
+4. Delete unneeded static assets from ```wwwroot``` (mainly *CSS* and *JavaScript* which now will be generated from sources on ```ClientAssets```).
+5. Copy the file ```webpack.reload``` to ```wwwroot```.
+6. Edit ```Program.cs``` to touch the file ```webpack.reload``` on startup (see code on this project's ```Program.cs```).
+7. Disable HTTPS redirection on project ```Startup.cs```
+8. Edit the file ```Pages/_Host.cshtml``` to load the *Webpack* compiled assets (see code on this project's ```Pages/_Host.cshtml```).
+9. Change references to *Open Iconic* icons to *Font Awesome*. You can see examples on this project's ```Shared/NavMenu.razor```.
+10. Do ```npm install```.
+11. Do ```npm run quickstart``` and start to code.
 
 ## Features
 
