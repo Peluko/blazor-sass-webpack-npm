@@ -35,7 +35,7 @@ To compile *SCSS* it uses [*Dart Sass*](https://sass-lang.com/dart-sass).
 
 ### Bundles
 
-*Webpack* is configured to create CSS and JavaScript bundles. They are saved in ```wwwroot/generated``` folder. It also creates the folders ```wwwroot/images``` and ```wwwroot/fonts``` for the referenced assets.
+*Webpack* is configured to create CSS and JavaScript bundles. They are saved in ```wwwroot/generated``` folder. It also creates the folders ```wwwroot/generated/images``` and ```wwwroot/generated/fonts``` for the referenced assets.
 When in development mode, it also generates the corresponding source maps.
 
 ### *Webpack* dev server
