@@ -1,6 +1,6 @@
 # blazor-sass-webpack-npm
 
-A Blazor skeleton project that integrates *SASS* / *SCSS* and *TypeScript* for compiling assets and
+A Blazor Server skeleton project that integrates *SASS* / *SCSS* and *TypeScript* for compiling assets and
 *Webpack* for bundling and optimization. It also adds *Bootstrap* theming support and *Font Awesome* icons.
 
 ## Implementation
