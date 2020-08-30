@@ -1,24 +1,16 @@
 {
   "compilerOptions": {
     "module": "ES2015",
+    "moduleResolution": "node",
     "noImplicitAny": true,
     "noEmitOnError": true,
     "removeComments": true,
     "sourceMap": true,
     "target": "ES2015",
     "outDir": "dist",
-    "baseUrl": ".",
-    "paths": {
-      "*": [
-        "../../node_modules/*"
-      ]
-    }
+    "baseUrl": "."
   },
   "include": [
     "src/*"
-  ],
-  "exclude": [
-    "node_modules",
-    "wwwroot"
   ]
 }
