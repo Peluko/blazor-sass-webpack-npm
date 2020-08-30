@@ -5,9 +5,7 @@ A *Blazor Server* skeleton project that integrates *SASS* / *SCSS* and *TypeScri
 
 ## Implementation
 
-This project is just generated with ```dotnet new``` and then adding the required *NPM* packages and configuration files. The initial commit of this repository is just what ```dotnet new blazorserver -au Individual -f net5.0``` generates. The following commits are the additions required to make *Webpack* work. You can implement it on your own projects by applying the same changes to your project. The relevant commit is:
-
-https://github.com/Peluko/blazor-sass-webpack-npm/commit/5e2a9fc07cd7d1f366478e021de859dba83ffc6e
+This project is just generated with ```dotnet new blazorserver -au Individual -f net5.0``` and then adding the required *NPM* packages and configuration files. You can implement it on your own projects by applying the same changes to your project.
 
 The steps for implementing it on another project are:
 
